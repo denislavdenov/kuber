@@ -13,7 +13,8 @@ GOVER=1.11.2
 # https://golang.org/dl/ 
 curl https://dl.google.com/go/go${GOVER}.linux-amd64.tar.gz -O 
 sudo tar -xvf go${GOVER}.linux-amd64.tar.gz 
-sudo mv -r go /usr/local/bin/go
+sudo mv go /usr/local/bin/go
+hash -r
 
 
 # Install aws-iam-authenticator 
