@@ -13,15 +13,8 @@ GOVER=1.11.2
 # https://golang.org/dl/ 
 curl https://dl.google.com/go/go${GOVER}.linux-amd64.tar.gz -O 
 sudo tar -xvf go${GOVER}.linux-amd64.tar.gz 
-sudo mv go /usr/local
+sudo mv go /usr/local/bin
 
-mkdir ~/go
-
-echo "export GOROOT=/usr/local/go" ~/.profile 
-echo 'export GOPATH=$HOME/go' >> ~/.profile 
-echo 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin' >> ~/.profile
-
-source ~/.profile
 
 # Install aws-iam-authenticator 
 go get -u -v github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator
