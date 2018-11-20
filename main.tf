@@ -5,10 +5,6 @@ command = "./script.sh"
 provisioner "local-exec" {
 command = "echo $PATH"             
 }
-
-provisioner "local-exec" {
-command = "go version"             
-}
 }
 
 resource "null_resource" "local-4" {
