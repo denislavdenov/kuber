@@ -1,3 +1,5 @@
 .terraform/
 .vagrant/
 terraform.tfstate*
+project/config_map_aws_auth.yaml
+project/terraform.tfstate* 
